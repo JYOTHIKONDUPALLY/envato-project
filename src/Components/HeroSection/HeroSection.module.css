@@ -1,0 +1,102 @@
+.TopSection {
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem;
+}
+
+.TopSection > button {
+  border-radius: 5px;
+  padding: 10px 40px;
+  font-size: 20px;
+  transition: 0.3s all;
+}
+.TopSection > button:hover {
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+  transform: scale(1);
+}
+
+.MainSection {
+  color: white;
+  display: grid;
+  grid-template-columns: 30% auto;
+  padding: 50px;
+}
+
+.MainSection > * {
+  margin-bottom: 20px;
+}
+.MainSection > div:first-child {
+  padding: 20px;
+  font-size: 20px;
+  height: fit-content;
+  width: 200px;
+}
+
+.MainSection > div:first-child > * {
+  margin-bottom: 10px;
+}
+.font1 {
+  font-size: 4rem;
+}
+
+.font12 {
+  background: linear-gradient(
+    38deg,
+    rgba(244, 115, 28, 1) 0%,
+    rgba(227, 104, 53, 1) 25%,
+    rgba(122, 35, 214, 1) 36%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 100%;
+  display: inline-block;
+  font-size: 4rem;
+}
+.font2 {
+  background: linear-gradient(
+    38deg,
+    rgba(244, 115, 28, 1) 0%,
+    rgba(227, 104, 53, 1) 25%,
+    rgba(122, 35, 214, 1) 36%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 100%;
+  display: inline-block;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
+}
+.rating > card {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.rating > card > div > * {
+  margin-bottom: 5px;
+}
+@media screen and (max-width: 980px) {
+  .MainSection {
+    display: block;
+    text-align: center;
+  }
+  .MainSection > div:first-child {
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+    width: 100%;
+  }
+  .font1 {
+    font-size: 3rem;
+  }
+  .font12 {
+    font-size: 3rem;
+  }
+}
