@@ -1,12 +1,8 @@
 import React from "react";
 import styles from "./HeroSection.module.css";
 import logo from "../../images/MotionArtEffect-logo.png";
-import icon1 from "../../images/motionarteffect-img2.png";
-import icon2 from "../../images/motionarteffect-img1.png";
-import icon3 from "../../images/motionarteffect-img3.png";
-import rating from "../../images/motionarteffect-img4.png";
+
 const HeroSection = () => {
-  const arr = [icon1, icon2, icon3];
   return (
     <div className={styles.HeroSection}>
       <div className={styles.TopSection}>
@@ -28,30 +24,6 @@ const HeroSection = () => {
             into your website.{" "}
           </p>
         </div>
-      </div>
-
-      <p
-        style={{
-          fontSize: "20px",
-          textAlign: "center",
-          fontWeight: 400,
-          margin: "auto",
-          marginTop: "50px",
-          color: "white",
-        }}
-      >
-        Trusted by thousands of users around the world
-      </p>
-      <div className={styles.rating}>
-        {arr.map((item, index) => (
-          <card key={index}>
-            <img src={item} alt="icon" />
-            <div>
-              <img src={rating} alt={rating} />
-              <p>4.5 score, 9 Reviews</p>
-            </div>
-          </card>
-        ))}
       </div>
     </div>
   );

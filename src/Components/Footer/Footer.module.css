@@ -5,14 +5,7 @@
   align-items: center;
   padding: 10px;
   text-align: center;
-  background: linear-gradient(
-    90deg,
-    #ed6e26,
-    #d45e4c,
-    #b74b78,
-    #9e3a9f,
-    #741fdf
-  );
+  background: linear-gradient(90deg, #f87516 0%, #5e11ff 100%);
   color: rgb(231, 227, 227);
 }
 

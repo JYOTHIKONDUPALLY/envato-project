@@ -4,6 +4,7 @@ import "./App.css";
 import Footer from "./Components/Footer/Footer";
 import Header from "./Components/Header/header";
 import HeroSection from "./Components/HeroSection/HeroSection";
+import MiddleSection from "./Components/MiddleSection/MiddleSection";
 
 const settings = {
   SIM_RESOLUTION: 128,
@@ -40,6 +41,7 @@ export default function App() {
       <canvas ref={canvas} style={{ width: "100%", height: "100%" }}></canvas>
       <Header />
       <HeroSection />
+      <MiddleSection />
       <Footer />
     </div>
   );
