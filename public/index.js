@@ -10,8 +10,21 @@ let config = {
   VELOCITY_DISSIPATION: 0.99,
   PRESSURE_DISSIPATION: 0.8,
   PRESSURE_ITERATIONS: 25,
+  CAPTURE_RESOLUTION: 512,
   CURL: 30,
-  SPLAT_RADIUS: 0.005,
+  RANDOM_SPLATS: true,
+  SPLAT_RADIUS: 0.003,
+  BACK_COLOR: "#0e0f1a",
+  SIM_RESOLUTION: 128,
+  TRANSPARENT: false,
+  BLOOM: true,
+  SPLAT_FORCE: 6000,
+  SUNRAYS: true,
+  SUNRAYS_RESOLUTION: 196,
+  SUNRAYS_WEIGHT: 0.1,
+  BRIGHTNESS: 0.7,
+  BLOOM_THRESHOLD: 0.6,
+  BLOOM_ITERATIONS: 8,
 };
 
 let pointers = [];
@@ -826,4 +839,26 @@ window.addEventListener("touchend", (e) => {
   for (let i = 0; i < touches.length; i++)
     for (let j = 0; j < pointers.length; j++)
       if (touches[i].identifier == pointers[j].id) pointers[j].down = false;
+});
+
+// ----------- ----------- ----------- ----------- ----------- ----------- ----------- -----------
+
+let count = 0;
+let colorArr = [Math.random() + 0.2, Math.random() + 0.2, Math.random() + 0.2]; // Define initial colorArr
+window.addEventListener("mousemove", function (e) {
+  count++;
+
+  if (count > 25) {
+    colorArr = [Math.random() + 0.2, Math.random() + 0.2, Math.random() + 0.2]; // Update colorArr if count exceeds 25
+    count = 0;
+  }
+
+  pointers[0].down = true;
+  pointers[0].color = colorArr;
+  pointers[0].moved = pointers[0].down;
+
+  pointers[0].dx = (e.x - pointers[0].x) * 10.0;
+  pointers[0].dy = (e.y - pointers[0].y) * 10.0;
+  pointers[0].x = e.x;
+  pointers[0].y = e.y;
 });

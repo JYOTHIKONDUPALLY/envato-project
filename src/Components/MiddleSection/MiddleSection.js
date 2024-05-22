@@ -28,7 +28,13 @@ const MiddleSection = () => {
       <div className={styles.rating}>
         {arr.map((item, index) => (
           <card key={index}>
-            <img src={item} alt="icon" width={88} height={88} />
+            <img
+              src={item}
+              alt="icon"
+              width={88}
+              height={88}
+              style={{ background: "#251d35", borderRadius: "50%" }}
+            />
             <div>
               <img src={rating} alt={rating} />
               <p>4.5 score, 9 Reviews</p>
