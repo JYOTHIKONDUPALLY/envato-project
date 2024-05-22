@@ -38,7 +38,7 @@ const MiddleSection = () => {
       </div>
       <div className={styles.wand}>
         <div>
-          <h1 className={styles.font1}>
+          <h1 className={styles.font1} style={{ textAlign: "start" }}>
             Turn Your Cursor Into A Colorful Magic Wand & Charm Your Visitors
           </h1>
           <p
@@ -101,14 +101,17 @@ const MiddleSection = () => {
         </div>
       </div>
       <div className={styles.section3}>
-        <h1 className={styles.font1}>
-          An All-Round Plugin With Powerful Features{" "}
-        </h1>
-        <p className={styles.body}>
-          Whether you're a seasoned web designer or just starting out, Motion
-          Art for Elementor seamlessly integrates with the Elementor platform,
-          providing you with a seamless and intuitive experience.
-        </p>
+        <div>
+          <h1 className={styles.font1}>
+            An All-Round Plugin With Powerful Features{" "}
+          </h1>
+          <p className={styles.body}>
+            Whether you're a seasoned web designer or just starting out, Motion
+            Art for Elementor seamlessly integrates with the Elementor platform,
+            providing you with a seamless and intuitive experience.
+          </p>
+        </div>
+
         <div className={styles.cardsContainer}>
           <div
             className={styles.card}
