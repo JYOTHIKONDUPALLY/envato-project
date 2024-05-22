@@ -7,6 +7,10 @@ import icon2 from "../../images/motionarteffect-img1.png";
 import icon3 from "../../images/motionarteffect-img3.png";
 import rating from "../../images/motionarteffect-img4.png";
 import wand from "../../images/motionarteffect-img5.png";
+import icon4 from "../../images/motionarteffect-img6.png";
+import icon5 from "../../images/motionarteffect-img7.png";
+import icon6 from "../../images/motionarteffect-img9.png";
+import browser from "../../images/motionarteffect-img8.png";
 const MiddleSection = () => {
   const arr = [icon1, icon2, icon3];
   return (
@@ -60,28 +64,84 @@ const MiddleSection = () => {
           <img src={wand} width={250} height={250} alt="wand" />
         </div>
       </div>
+
+      <h1 className={styles.font1} style={{ padding: "10px" }}>
+        Apply On Any Section Or Enable For <br />
+        Whole Page
+      </h1>
       <section>
-        <h1 className={styles.font2}>
-          Apply On Any Section Or Enable For Whole Page
-        </h1>
-        <card>
+        <div className={styles.card}>
           <h1 className={styles.font2}> Apply On Section</h1>
-          <p>
+          <p className={styles.body}>
             {" "}
             Apply on section is a game-changer, offering an unparalleled way to
             manage applications directly from your website.
           </p>
-          <img src={section} alt="section" />
-        </card>
-        <card>
+          <img src={section} className={styles.img} alt="section" />
+        </div>
+        <div className={styles.card}>
           <h1 className={styles.font2}> Apply On Page</h1>
-          <p>
+          <p className={styles.body}>
             Take your website to new heights with Motion Art for Elementor.
             Embrace the power of motion and animation.
           </p>
-          <img src={pages} alt="page" />
-        </card>
+          <img className={styles.img} src={pages} alt="page" />
+        </div>
       </section>
+
+      <div className={styles.section2}>
+        <h1 className={styles.font1}>Supported by All Popular Browsers</h1>
+
+        <p className={styles.body}>
+          Rest assured, Motion Art is designed to be compatible <br />
+          with all major web browsers.
+        </p>
+        <div className={styles.icons}>
+          <img src={browser} alt="browser" width="100%" height="100%" />
+        </div>
+      </div>
+      <div className={styles.section3}>
+        <h1 className={styles.font1}>
+          An All-Round Plugin With Powerful Features{" "}
+        </h1>
+        <p className={styles.body}>
+          Whether you're a seasoned web designer or just starting out, Motion
+          Art for Elementor seamlessly integrates with the Elementor platform,
+          providing you with a seamless and intuitive experience.
+        </p>
+        <div className={styles.cardsContainer}>
+          <div
+            className={styles.card}
+            style={{ maxWidth: "400px", height: "400px" }}
+          >
+            <img src={icon6} alt="symbols" />
+            <h1>Light Weight</h1>
+            <p className={styles.body}>
+              Motion Art for Elementor is designed to be lightweight.
+            </p>
+          </div>
+          <div
+            className={styles.card}
+            style={{ maxWidth: "400px", height: "400px" }}
+          >
+            <img src={icon4} alt="symbols" />
+            <h1>100% Responsive</h1>
+            <p className={styles.body}>
+              Create a consistent visual experience across all devices.
+            </p>
+          </div>
+          <div
+            className={styles.card}
+            style={{ maxWidth: "400px", height: "400px" }}
+          >
+            <img src={icon5} alt="symbols" />
+            <h1>User Friendly Interface</h1>
+            <p className={styles.body}>
+              Ensure a smooth experience for both applicants and administrators.
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

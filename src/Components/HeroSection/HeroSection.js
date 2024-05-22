@@ -11,14 +11,17 @@ const HeroSection = () => {
       </div>
       <div className={styles.MainSection}>
         <div>
-          <h4 className={styles.font2}>Transform Your Website</h4>
-          <h4>With Motion Art Effect</h4>
+          <h4 className={styles.font2}>
+            Transform Your
+            <br /> Website
+          </h4>
+          <p style={{ fontSize: "16px" }}>With Motion Art Effect</p>
         </div>
         <div>
           <h1 className={styles.font1}>Attract Your Visitors</h1>
           <h1 className={styles.font1}>Attention With Colorful</h1>
           <h1 className={styles.font12}>Motion Art Effect</h1>
-          <p style={{ color: "#d2d0d8", fontSize: "18px", marginTop: "20px" }}>
+          <p className={styles.body}>
             Unleash the power of creativity with Motion Art for Elementor - your
             ultimate solution for seamlessly integrating captivating animations
             into your website.{" "}

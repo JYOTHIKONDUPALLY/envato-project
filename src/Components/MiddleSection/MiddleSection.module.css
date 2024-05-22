@@ -29,8 +29,16 @@
 }
 
 .font1 {
-  font-size: 2.5rem;
+  font-size: 2.3rem;
   line-height: 60px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+.body {
+  font-size: 18px;
+  margin-top: 30px;
+  color: rgb(215, 215, 215);
+  line-height: 30px;
 }
 .wand > div:first-child > * {
   margin-bottom: 20px;
@@ -49,18 +57,93 @@
   text-decoration: none;
 }
 
+.btn:hover {
+  transform: scale(1);
+}
 .wand > div:last-child {
   display: flex;
   flex-direction: row-reverse;
 }
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.card {
+  max-width: 500px;
+  box-sizing: border-box;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  background: linear-gradient(
+    180deg,
+    rgba(28, 20, 36, 1) 80%,
+    rgba(74, 68, 80, 1) 99%
+  );
+}
+
+.img {
+  max-width: 450px;
+  width: 100%;
+  height: auto;
+  transition: width 0.3s ease;
+  margin-top: 30px;
+}
+
+.section2 {
+  background: linear-gradient(
+    180deg,
+    rgba(28, 20, 36, 1) 80%,
+    rgba(74, 68, 80, 1) 99%
+  );
+  box-sizing: border-box;
+  padding: 20px;
+  margin: 50px;
+  border-radius: 10px;
+  text-align: center;
+}
+.icons {
+  margin-top: 20px;
+}
+.cardsContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
 @media screen and (max-width: 800px) {
   .wand {
     display: block;
+    padding: 10px;
+    margin: 10px;
   }
 
   .wand > div:last-child {
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+  .body {
+    font-size: 14px;
+    color: rgb(215, 215, 215);
+    line-height: 10px;
+  }
+  .section {
+    display: block;
+  }
+
+  .card {
+    width: calc(100% - 40px);
+    margin: 10px auto;
+  }
+
+  .font1 {
+    font-size: 1rem;
   }
 }
